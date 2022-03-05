@@ -19,6 +19,12 @@
         "react"
     ],
     "rules": {
+        "react/function-component-definition": [
+            0,
+            {
+              "namedComponents": "function-declaration"
+            }
+          ],
         "react/react-in-jsx-scope": "off",
         "react/jsx-filename-extension": [1, { "extensions": [".js",".jsx"] }],
         "prettier/prettier": [
@@ -32,5 +38,12 @@
             "endOfLine": "auto"
           }
         ]
+      },
+      "settings": {
+        "import/resolver": {
+          "node": {
+            "paths": ["src"]
+          }
+        }
       }
 }

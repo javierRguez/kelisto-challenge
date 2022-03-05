@@ -1,22 +1,22 @@
-import './App.css'
+import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk'
+import { Provider } from 'react-redux'
+import rootReducer from 'store/reducers/rootReducer'
+import GlobalStyle from 'styles/GlobalStyle'
+import 'i18n'
+import Routes from 'Routes'
 
-function App() {
+const App = () => {
+  const store = createStore(rootReducer, applyMiddleware(thunk))
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <GlobalStyle />
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
+    </Provider>
   )
 }
 

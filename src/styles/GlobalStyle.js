@@ -9,4 +9,11 @@ export default createGlobalStyle`
     margin: 0;
     font-family: 'Roboto';
   }
+
+  .App{
+    display:flex ;
+    flex-direction:column ;
+    justify-content:center ;
+    align-items:center ;
+  }
 `

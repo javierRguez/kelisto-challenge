@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import colors from './theme/colors'
 
 export default createGlobalStyle`
   html, body {
@@ -6,14 +7,17 @@ export default createGlobalStyle`
   }
   
   body {
+    min-width: 320px;
     margin: 0;
     font-family: 'Roboto';
+    background-color:${colors.primaryMain} ;
   }
 
-  .App{
-    display:flex ;
-    flex-direction:column ;
-    justify-content:center ;
-    align-items:center ;
+  .button{
+    border-radius:10px ;
+  }
+
+  .full-height-container{
+    height:100% ;
   }
 `

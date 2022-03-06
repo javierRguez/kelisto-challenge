@@ -1,4 +1,7 @@
 {
   "LEARN_REACT": "Aprende React",
-  "ALL_TRANSACTION_BUTTON":"Mostrar todas las transacciones"
+  "ALL_TRANSACTION_BUTTON":"Mostrar todas las transacciones",
+  "YOUR_BALANCE":"saldo",
+  "HI_USER":"Hola Anakin",
+  "RECENT":"Recientes"
 }

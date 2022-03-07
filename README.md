@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![This is an image](./src/assets/img/screenshot.png)
 
+## Objetive
+
+The main idea of this project is to create a structure for a large future application;  clean, modular and extensible.
+
 ## Installation and Setup Instructions
 
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.

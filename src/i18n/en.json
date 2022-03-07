@@ -2,6 +2,7 @@
   "LEARN_REACT": "Learn React",
   "ALL_TRANSACTION_BUTTON":"Show all transactions",
   "YOUR_BALANCE":"your balance",
-  "HI_USER":"Hi Anakin",
-  "RECENT":"Recent"
+  "HI_USER":"Hi",
+  "RECENT":"Recent",
+  "WELCOME":"Welcome"
 }

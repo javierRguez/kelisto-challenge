@@ -10,6 +10,10 @@ const getCoins = () => {
           type: 'GET_COINS',
           coins,
         })
+        dispatch({
+          type: 'GET_BALANCE_SUM',
+          coins,
+        })
       })
       .catch((error) => {
         toast.error(error.response?.data, {

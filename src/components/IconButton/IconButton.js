@@ -14,12 +14,15 @@ const StyledButton = styled(Button)`
   border: 1px solid ${colors.textSecondaryMain};
 `
 
-const ButtonIcon = ({ selectedClassName, iconClass }) => {
+const IconButton = ({ selectedClassName, iconClass }) => {
   return (
-    <StyledButton className={`${selectedClassName} button`} variant="outlined">
+    <StyledButton
+      className={`${selectedClassName} rounded-button`}
+      variant="outlined"
+    >
       <StyledIcon className={iconClass} />
     </StyledButton>
   )
 }
 
-export default ButtonIcon
+export default IconButton

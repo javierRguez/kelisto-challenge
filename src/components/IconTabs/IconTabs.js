@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react'
 import TabsUnstyled from '@mui/base/TabsUnstyled'
-import ButtonIcon from 'components/ButtonIcon'
+import IconButton from 'components/IconButton'
 import { Tab, TabPanel, TabsList } from './styleIconTabs'
 
 const IconTabs = () => {
@@ -9,25 +9,25 @@ const IconTabs = () => {
     <TabsUnstyled defaultValue={0}>
       <TabsList>
         <Tab>
-          <ButtonIcon
+          <IconButton
             selectedClassName="styled-button-selected"
             iconClass="k-icon-dashboard"
           />
         </Tab>
         <Tab>
-          <ButtonIcon
+          <IconButton
             selectedClassName="styled-button-selected"
             iconClass="k-icon-card"
           />
         </Tab>
         <Tab>
-          <ButtonIcon
+          <IconButton
             selectedClassName="styled-button-selected"
             iconClass="k-icon-refresh"
           />
         </Tab>
         <Tab>
-          <ButtonIcon
+          <IconButton
             selectedClassName="styled-button-selected"
             iconClass="k-icon-settings"
           />
